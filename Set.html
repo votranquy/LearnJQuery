@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn1").click(function(){
+                    $("#id1").text("Hello");
+                });
+                $("#btn2").click(function(){
+                    $("#id2").html("<b>Hello</b>");
+                });
+                $("#btn3").click(function(){
+                    $("#id3").val("12345");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p id="id1">Grap 1</p>
+        <p id="id2">Grap 2</p>
+        <p><input type="text" id="id3" value="27428eqwe293092oqi"></p>
+        <button id="btn1">Set1</button>
+        <button id="btn2">Set2</button>
+        <button id="btn3">Set3</button>
+    </body>
+</html>
