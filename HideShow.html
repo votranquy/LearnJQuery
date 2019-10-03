@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#show").hide();
+                $("#hide").click(function(){
+                    $("p").hide();
+                    $("#show").show();
+                    $("#hide").hide();
+                });
+                $("#show").click(function(){
+                    $("p").show();
+                    $("#show").hide();
+                    $("#hide").show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="hide"> Hide </button>
+        <button id="show"> Show </button>
+        <p> The content of text</p>
+    </body>
+</html>
