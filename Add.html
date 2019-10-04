@@ -3,23 +3,42 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
+                // Append()
                 $("#btn1").click(function(){
-                    $("p").append("<b>Append text</b>");
+                    $("#p1").append("<b>Append text</b>");
                 });
                 $("#btn2").click(function(){
-                    $("ol").append("<li>Append item</li>");
+                    $("#ol1").append("<li>Append item</li>");
+                });
+                //Prepend()
+                $("#btn3").click(function(){
+                    $("#p3").prepend("<b>Prepend text</b>");
+                });
+                $("#btn4").click(function(){
+                    $("#ol2").prepend("<li>Prepend item</li>");
                 });
             });
         </script>
     </head>
     <body>
-        <p>This is a paragraph.</p>
-        <p>This is another paragraph.</p>
-        <ol>
+        <button id="btn1">Append text</button>
+        <button id="btn2">Append list item</button>
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+        <ol id="ol1">
             <li>List1</li>
             <li>List2</li>
         </ol>
-        <button id="btn1">Append text</button>
-        <button id="btn2">Append list item</button>
+        <br>
+        <button id="btn3">Prepend text</button>
+        <button id="btn4">Prepend list item</button>
+        <p id="p3">This is a paragraph.</p>
+        <p id="p4">This is another paragraph.</p>
+        <ol id="ol2">
+            <li>List1</li>
+            <li>List2</li>
+        </ol>
+        <br>
+
     </body>
 </html>
