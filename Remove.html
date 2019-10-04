@@ -9,6 +9,9 @@
                 $("#btn2").click(function(){
                     $("#div2").empty();
                 });
+                $("#btn6").click(function(){
+                    $("p").remove(".remove");
+                });
             });
 
         </script>
@@ -24,7 +27,12 @@
                 <p>1</p>
                 <p>2</p>
                 <p>3</p>
-            </div>
-            <button id="btn2">Empty Text</button>
+        </div>
+        <button id="btn2">Empty Text</button>
+        <br>
+        <p> This is text</p>
+        <p class="remove"> This is text</p>
+        <p class="remove"> This is text</p>
+        <button id="btn6">Remove special Text</button>
     </body>
 </html>
