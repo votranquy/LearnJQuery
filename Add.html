@@ -18,6 +18,14 @@
                     $("#ol2").prepend("<li>Prepend item</li>");
                 });
             });
+            function appendText(){
+                //Append Several Text
+                var txt1 = "<p> Text 1.</p>";
+                var txt2 = $("<p></p>").text("Text2");
+                var txt3 = document.createElement("p");
+                txt3.innerHTML = "Text3.";
+                $("body").append(txt1,txt2,txt3);
+            }
         </script>
     </head>
     <body>
@@ -39,6 +47,7 @@
             <li>List2</li>
         </ol>
         <br>
-
+        <p> This is a paragraph</p>
+        <button id="btn5" onclick="appendText()">Append Many Text</button>
     </body>
 </html>
