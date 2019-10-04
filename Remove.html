@@ -6,6 +6,9 @@
                 $("#btn").click(function(){
                     $("#div1").remove();
                 });
+                $("#btn2").click(function(){
+                    $("#div2").empty();
+                });
             });
 
         </script>
@@ -17,5 +20,11 @@
             <p>3</p>
         </div>
         <button id="btn">Remove Text</button>
+        <div id="div2" style="height:100px;width:100px;background-color:#565656">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+            </div>
+            <button id="btn2">Empty Text</button>
     </body>
 </html>
