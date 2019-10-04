@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#btn").click(function(){
+                    $("#div1").remove();
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <div id="div1" style="height:100px;width:100px;background-color:#565656">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+        </div>
+        <button id="btn">Remove Text</button>
+    </body>
+</html>
