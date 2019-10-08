@@ -3,9 +3,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
-                $("button").click(function(){
+                $("#button1").click(function(){
                     $("h1").addClass("blue");
                     $("div").addClass("important");
+                });
+                $("#button2").click(function(){
+                    $("h1").removeClass("blue");
+                    // $("div").addClass("important");
                 });
             });
         </script>
@@ -22,6 +26,7 @@
     <body>
         <h1>This is a paragraph with h1 font</h1>
         <div>This is the content of div</div>
-        <button>Add Class</button>
+        <button id="button1">Add Class</button>
+        <button id="button2">Remove Class</button>
     </body>
 </html>
