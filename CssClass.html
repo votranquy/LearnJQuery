@@ -11,6 +11,9 @@
                     $("h1").removeClass("blue");
                     // $("div").addClass("important");
                 });
+                $("#button3").click(function(){
+                    $("h2").toggleClass("blue");
+                });
             });
         </script>
         <style>
@@ -26,7 +29,10 @@
     <body>
         <h1>This is a paragraph with h1 font</h1>
         <div>This is the content of div</div>
+        <h2 class="blue">This is the content of h2</div>
+        <br>
         <button id="button1">Add Class</button>
         <button id="button2">Remove Class</button>
+        <button id="button3">Toggle Class</button>
     </body>
 </html>
