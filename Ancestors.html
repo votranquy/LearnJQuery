@@ -4,6 +4,7 @@
         <script>
             $(document).ready(function(){
                 $("span").parent().css({"color":"red","border":"2px solid red"});
+                $("p").parentsUntil("div").css({"color":"yellow","border":"2px solid yellow"});
             });
         </script>
         <style>
@@ -18,16 +19,29 @@
         </style>
     </head>
     <body>
+
         <div class="ancestor">
             <div>div
                 <li>li
                     <span>First</span>
                 </li>
             </div>
-
             <div>div
                 <li>li
                     <span>Second</span>
+                </li>
+            </div>
+        </div>
+
+        <div class="ancestor">
+            <div>div
+                <li>li
+                    <p>First</p>
+                </li>
+            </div>
+            <div>div
+                <li>li
+                    <p>Second</p>
                 </li>
             </div>
         </div>
