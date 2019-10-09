@@ -39,6 +39,9 @@
                     txt += "WindowHeight: " + $(window).height() + "</br>";
                     $("#div1").html(txt);
                 });
+                $("#button7").click(function(){
+                    $("#div1").width(500).height(500);
+                });
             });
         </script>
         <style>
@@ -60,6 +63,7 @@
         <button id="button4">Get outerWidthtrue/outerHeighttrue</button><br>
         <button id="button5">Get Width/Height of documnet</button><br>
         <button id="button6">Get Width/Height of Window</button><br>
+        <button id="button7">SET Width/Height</button><br>
 
     </body>
 </html>
