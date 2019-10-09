@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    alert( "Background" + $("p").css("background-color") );
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p style="background-color: #ff0000">A paragraph</p>
+        <button>Show</button>
+
+    </body>
+</html>
