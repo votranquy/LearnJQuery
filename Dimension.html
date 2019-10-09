@@ -27,6 +27,18 @@
                     txt += "outerHeighttrue: " + $("#div1").outerHeight(true) + "</br>";
                     $("#div1").html(txt);
                 });
+                $("#button5").click(function(){
+                    var txt = "";
+                    txt += "DocumentWidth: " + $(document).width() + "</br>";
+                    txt += "DocumentHeight: " + $(document).height() + "</br>";
+                    $("#div1").html(txt);
+                });
+                $("#button6").click(function(){
+                    var txt = "";
+                    txt += "WindowWidth: " + $(window).width() + "</br>";
+                    txt += "WindowHeight: " + $(window).height() + "</br>";
+                    $("#div1").html(txt);
+                });
             });
         </script>
         <style>
@@ -46,5 +58,8 @@
         <button id="button2">Get innerWidth/innerHeight</button><br>
         <button id="button3">Get outerWidth/outerHeight</button><br>
         <button id="button4">Get outerWidthtrue/outerHeighttrue</button><br>
+        <button id="button5">Get Width/Height of documnet</button><br>
+        <button id="button6">Get Width/Height of Window</button><br>
+
     </body>
 </html>
