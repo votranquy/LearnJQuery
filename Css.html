@@ -9,6 +9,9 @@
                 $("#button2").click(function(){
                     $("p").css("background-color","yellow");
                 });
+                $("#button3").click(function(){
+                    $("p").css({"background-color": "red", "font-size": "200%"});
+                });
             });
         </script>
     </head>
@@ -19,5 +22,6 @@
         <p style="background-color: #ff0000">A paragraph</p>
         <button id="button1">Show</button>
         <button id="button2">Set</button>
+        <button id="button3">Set Multi Attr</button>
     </body>
 </html>
