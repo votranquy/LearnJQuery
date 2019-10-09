@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#button1").click(function(){
+                    var txt = "";
+                    txt += "Width: " + $("#div1").width() + "</br>";
+                    txt += "Height: " + $("#div1").height() + "</br>";
+                    $("#div1").html(txt);
+                });
+                $("#button2").click(function(){
+                    var txt = "";
+                    txt += "innerWidth: " + $("#div1").innerWidth() + "</br>";
+                    txt += "innerHeight: " + $("#div1").innerHeight() + "</br>";
+                    $("#div1").html(txt);
+                });
+                $("#button3").click(function(){
+                    var txt = "";
+                    txt += "outerWidth: " + $("#div1").outerWidth() + "</br>";
+                    txt += "outerHeight: " + $("#div1").outerHeight() + "</br>";
+                    $("#div1").html(txt);
+                });
+                $("#button4").click(function(){
+                    var txt = "";
+                    txt += "outerWidthtrue: " + $("#div1").outerWidth(true) + "</br>";
+                    txt += "outerHeighttrue: " + $("#div1").outerHeight(true) + "</br>";
+                    $("#div1").html(txt);
+                });
+            });
+        </script>
+        <style>
+            #div1{
+                height: 100px;
+                width:300px;
+                padding:20px;
+                margin:5px;
+                border:1px solid blue;
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1"></div>
+        <button id="button1">Get Width/Height</button><br>
+        <button id="button2">Get innerWidth/innerHeight</button><br>
+        <button id="button3">Get outerWidth/outerHeight</button><br>
+        <button id="button4">Get outerWidthtrue/outerHeighttrue</button><br>
+    </body>
+</html>
