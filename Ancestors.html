@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("span").parent().css({"color":"red","border":"2px solid red"});
+            });
+        </script>
+        <style>
+            .ancestor{
+                height: 100px;
+                width:300px;
+                padding:20px;
+                margin:5px;
+                border:1px solid blue;
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ancestor">
+            <div>div
+                <li>li
+                    <span>First</span>
+                </li>
+            </div>
+
+            <div>div
+                <li>li
+                    <span>Second</span>
+                </li>
+            </div>
+        </div>
+
+    </body>
+</html>
