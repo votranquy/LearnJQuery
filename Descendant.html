@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".descendant").children().css({"color":"red","border":"2px solid red"});
+                $("#abc").children("p").css({"color":"yellow","border":"2px solid yellow"});
+            });
+        </script>
+        <style>
+            .descendant{
+                height: 100px;
+                width:300px;
+                padding:20px;
+                margin:5px;
+                border:1px solid blue;
+                background-color: lightblue;
+            }
+            .ancestor{
+                height: 100px;
+                width:300px;
+                padding:20px;
+                margin:5px;
+                border:1px solid green;
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="descendant">
+            <div>div
+                <li>li
+                    <span>First</span>
+                </li>
+            </div>
+            <div>div
+                <li>li
+                    <span>Second</span>
+                </li>
+            </div>
+        </div>
+
+        <div class="ancestor" id="div2">
+            <div>div
+                <li>li
+                    <span>First</span>
+                </li>
+            </div>
+
+            <div>div
+                <li>li
+                    <span>Second</span>
+                </li>
+            </div>
+        </div>
+
+        <div id="abc">
+            <p>ABCXYZ</p>
+            <h2>AJJAKSKASA</h2>
+            <h1>sidisdiisdsdoso</h1>
+        </div>
+    </body>
+</html>
