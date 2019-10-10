@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("h3").nextUntil("h6").css({"color":"green","border":"2px solid green"});
+            });
+        </script>
+    </head>
+    <body>
+
+        <div class="ancestor">
+            <div>div</div>
+            <p>p</p>
+            <h3>h3</h3>
+            <h4>h4</h4>
+            <h5>h5</h5>
+            <h6>h6</h6>
+        </div>
+
+    </body>
+</html>
