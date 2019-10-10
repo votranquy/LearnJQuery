@@ -6,6 +6,9 @@
                 $("div").first().css({"color":"green","border":"2px solid green"});
                 $("div").last().css({"color":"red","border":"2px solid red"});
                 $("h3").eq(1).css({"color":"blue","border":"2px solid blue"});
+                $("p").filter(".intro").css({"color":"orange","border":"2px solid orange"});
+                $("p").not(".intro").css({"color":"black","border":"2px solid black"});
+
             });
         </script>
     </head>
@@ -26,7 +29,7 @@
             <h6>h6</h6>
         </div>
         <div class="div3">
-            <p>p</p>
+            <p class="intro">p</p>
             <h3>h3</h3>
             <h4>h4</h4>
             <h5>h5</h5>
