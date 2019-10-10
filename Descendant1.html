@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".descendant").find("li").css({"color":"red","border":"2px solid red"});
+                $("#abc").find("*").css({"color":"yellow","border":"2px solid yellow"});
+            });
+        </script>
+    </head>
+    <body>
+
+        <div class="descendant">
+            <div>div
+                <li>li
+                    <span>First</span>
+                </li>
+            </div>
+            <div>div
+                <li>li
+                    <span>Second</span>
+                </li>
+            </div>
+        </div>
+
+        <div class="ancestor" id="div2">
+            <div>div
+                <li>li
+                    <span>First</span>
+                </li>
+            </div>
+
+            <div>div
+                <li>li
+                    <span>Second</span>
+                </li>
+            </div>
+        </div>
+
+        <div id="abc">
+            <p>ABCXYZ</p>
+            <h2>AJJAKSKASA</h2>
+            <h1>sidisdiisdsdoso</h1>
+        </div>
+    </body>
+</html>
