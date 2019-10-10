@@ -4,7 +4,8 @@
         <script>
             $(document).ready(function(){
                 $("h3").siblings().css({"color":"red","border":"2px solid red"});
-                $("h3").siblings("h4").css({"color":"red","border":"2px solid yellow"});
+                $("h3").siblings("h4").css({"color":"yellow","border":"2px solid yellow"});
+                $("h4").next().css({"color":"green","border":"2px solid green"});
             });
         </script>
     </head>
@@ -15,6 +16,7 @@
             <p>p</p>
             <h3>h3</h3>
             <h4>h4</h4>
+            <h5>h5</h5>
         </div>
 
     </body>
