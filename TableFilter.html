@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#myInput").on("keyup", function(){
+                    var value = $(this).val().toLowerCase();
+                    $("#myTable tr").filter(function(){
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <input id="myInput" type="text" placeholder="Search...">
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Anna</td>
+                    <td>Lee</td>
+                    <td>anna@example.com</td>
+                </tr>
+                <tr>
+                    <td>NooNa</td>
+                    <td>Connor</td>
+                    <td>noona@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
