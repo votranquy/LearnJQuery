@@ -9,6 +9,13 @@
                         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
                     });
                 });
+
+                $("#myInput2").on("keyup", function(){
+                    var value = $(this).val().toLowerCase();
+                    $("#myDIV *").filter(function(){
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
             });
         </script>
         <style>
@@ -69,5 +76,12 @@
                 </tr>
             </tbody>
         </table>
+
+        <input id="myInput2" type="text" placeholder="Search...">
+        <div id="myDIV">
+            <p>The first p element</p>
+            <div>I am a div element inside a div</div>
+            <button> A button</button>
+        </div>
     </body>
 </html>
